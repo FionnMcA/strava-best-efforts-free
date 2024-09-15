@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { AuthService } from '../shared/services/authService.service';
+import { AuthService } from '../shared/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,11 +9,9 @@ import { AuthService } from '../shared/services/authService.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
-  
   private authService = inject(AuthService)
 
   ngOnInit(): void {
     this.authService.goToStravaAuthPage()
   }
-
 }

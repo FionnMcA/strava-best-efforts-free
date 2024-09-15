@@ -1,0 +1,75 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;   
+}
+
+.loader {
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 1px;
+}
+
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+
+@media only screen and (max-width: 767px) {
+    .loading-container {
+        font-size: 20px; 
+    }
+
+    .loader {
+        width: 20px;
+        margin-top: 11px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .loading-container {
+        font-size: 24px; 
+    }
+
+    .loader {
+        width: 24px;
+        margin-top: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .loading-container {
+        font-size: 32px; 
+    }
+
+    .loader {
+        width: 32px;
+        margin-top: 18px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .loading-container {
+        font-size: 40px; 
+    }
+
+    .loader {
+        width: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .loading-container {
+        font-size: 48px; 
+    }
+
+    .loader {
+        width: 48px;
+        margin-top: 24px;
+    }
+}

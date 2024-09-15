@@ -1,7 +1,11 @@
-<div *ngIf="loading">
-    Loading some impressive stats
+<div *ngIf="loading" class="loading-container">
+        Loading some impressive stats <span class="loader"></span>
 </div>
-
 <div *ngIf="!loading"> 
-    results loaded    
-</div>
+    <app-categories></app-categories> 
+    @if(hasRuns){
+        <app-table></app-table>
+    } @else {
+        <app-no-pr></app-no-pr>
+    }
+</div> 

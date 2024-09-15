@@ -1,0 +1,332 @@
+th {
+    background-color: #f9f8f4 !important;
+    font-weight: normal;
+    color: #757577;
+}
+
+tr {
+    margin: 0;  
+    padding: 0;
+}
+
+td {
+    color: #2b2b2b;
+}
+
+.kudos-span {
+    display: flex; 
+    align-items: center; 
+}
+
+.expanded-row td {
+  border-bottom: none;
+}
+
+.expanded-row-extra-info {
+    background-color: inherit !important;
+    transition: none !important;
+    cursor: pointer;
+}
+
+.table-container {
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .table-container {
+        width: 450px;
+    }
+
+    th {
+        padding: 10px;
+        font-size: 13.5px;
+        height: 20px !important;
+    }
+    
+    tr {
+        font-size: 13.5px;
+        height: 20px !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    td {
+        padding: 10px;
+    }
+
+    .highlight-header {
+        width: 2px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date-header {
+        width: auto;
+    }
+
+    .medal-header {
+        width: 40px;
+    }
+
+    .pace-header {
+        width: 100px;
+    }
+
+    .time-header {
+        width: 100px;
+    }
+
+    .kudos-header {
+        width: 60px;
+    }
+
+    .drop-down-header {
+        width: 40px;
+    }
+
+    .extended-row-highlight{
+        padding: 0;
+        margin: 0;
+        width: 2px; 
+        background-color: #fc540b;
+    }
+
+    .highlighted-expanded-row {
+        width: 2px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .medal-cell {
+        padding: 2px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .table-container {
+        width: 600px;
+    }
+
+    th {
+        padding: 10px;
+        font-size: 13.5px;
+        height: 20px !important;
+    }
+
+    tr {
+        font-size: 13.5px;
+        height: 20px !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    td {
+        padding: 10px;
+    }
+
+    .highlight-header {
+        width: 2px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date-header {
+        width: auto;
+    }
+
+    .medal-header {
+        width: 40px;
+    }
+
+    .pace-header {
+        width: 100px;
+    }
+
+    .time-header {
+        width: 100px;
+    }
+
+    .kudos-header {
+        width: 60px;
+    }
+
+    .drop-down-header {
+        width: 40px;
+    }
+
+    .extended-row-highlight{
+        padding: 0;
+        margin: 0;
+        width: 2px; 
+        background-color: #fc540b;
+    }
+
+    .highlighted-expanded-row {
+        width: 2px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .medal-cell {
+        padding: 5px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .table-container {
+        width: 800px;
+    }
+
+    .highlight-header {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date-header {
+        width: auto;
+    }
+
+    .medal-header {
+        width: 40px;
+    }
+
+    .pace-header {
+        width: 110px;
+    }
+
+    .time-header {
+        width: 110px;
+    }
+
+    .kudos-header {
+        width: 80px;
+    }
+
+    .drop-down-header {
+        width: 50px;
+    }
+
+    .extended-row-highlight{
+        padding: 0;
+        margin: 0;
+        width: 4px; 
+        background-color: #fc540b;
+    }
+
+    .highlighted-expanded-row {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .medal-cell {
+        padding: 5px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    .table-container {
+        width: 1000px;
+    }
+
+    .highlight-header {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date-header {
+        width: auto;
+    }
+
+    .medal-header {
+        width: 40px;
+    }
+
+    .pace-header {
+        width: 110px;
+    }
+
+    .time-header {
+        width: 110px;
+    }
+
+    .kudos-header {
+        width: 80px;
+    }
+
+    .drop-down-header {
+        width: 50px;
+    }
+
+    .extended-row-highlight{
+        padding: 0;
+        margin: 0;
+        width: 4px; 
+        background-color: #fc540b;
+    }
+
+    .highlighted-expanded-row {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .medal-cell {
+        padding: 5px 0px 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .table-container {
+        width: 1250px;
+    }
+
+    .highlight-header {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .date-header {
+        width: auto;
+    }
+
+    .medal-header {
+        width: 40px;
+    }
+
+    .pace-header {
+        width: 110px;
+    }
+
+    .time-header {
+        width: 110px;
+    }
+
+    .kudos-header {
+        width: 80px;
+    }
+
+    .drop-down-header {
+        width: 50px;
+    }
+
+    .extended-row-highlight{
+        padding: 0;
+        margin: 0;
+        width: 4px; 
+        background-color: #fc540b;
+    }
+
+    .highlighted-expanded-row {
+        width: 4px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .medal-cell {
+        padding: 5px 0px 0px 10px;
+    }
+}

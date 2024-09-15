@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideHttpClient, HttpHandlerFn, HttpRequest, withInterceptors } from '@angular/common/http';
 
 import { routes } from './app.routes';
-import { AuthService } from './shared/services/authService.service';
+import { AuthService } from './shared/services/auth.service';
 
 function authInterceptor(request: HttpRequest<unknown>, next: HttpHandlerFn){
   const authService = inject(AuthService)

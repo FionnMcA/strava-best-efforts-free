@@ -1,30 +1,22 @@
 import { inject, Injectable, signal } from "@angular/core";
 import { environment } from "../environments/environments";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
+import { StravaResponseToken } from "../models/strava-response-token.model";
 import { tap } from "rxjs";
-
-interface StravaTokenResponse {
-    token_type: string,
-    expires_at: number;
-    expires_in: number;
-    refresh_token: string;
-    access_token: string;
-    athelete: any;
-}
-
 
 @Injectable({
     providedIn: 'root'
 })
 export class AuthService {
-    private accessToken = signal<string>('')
-
     private httpClient = inject(HttpClient)
+
+    private accessToken = signal<string>('')
 
     private redirectUri = environment.REDIRECT_URI;
     private clientId = environment.STRAVA_CLIENT_ID
     private clientSecret = environment.STRAVA_CLIENT_SECRET;
 
+    // Method to redirect the user to the Strava authorization page
     goToStravaAuthPage(){
         const scope = 'activity:read_all'
         const baseUrl = 'https://www.strava.com/oauth/authorize'
@@ -39,6 +31,7 @@ export class AuthService {
         window.location.href = `${baseUrl}?${queryParams.toString()}`
     }
 
+    // Method to exchange the authorization code for an access token
     exchangeCodeForToken(code: string){
         const body = new HttpParams()
         .set('client_id', this.clientId)
@@ -50,7 +43,7 @@ export class AuthService {
             'Content-Type': 'application/x-www-form-urlencoded'
         })
 
-        return this.httpClient.post<StravaTokenResponse>('https://www.strava.com/oauth/token', body.toString(), { headers}).pipe(
+        return this.httpClient.post<StravaResponseToken>('https://www.strava.com/oauth/token', body.toString(), { headers}).pipe(
             tap({
                 next: (response) => this.accessToken.set(response.access_token),
                 error: (error) => console.log('Error exchanging auth code for access token', error)
@@ -58,6 +51,7 @@ export class AuthService {
         )
     }
 
+    // Getter for retrieving the access token
     get token(){
         return this.accessToken()
     }

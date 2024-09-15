@@ -1,0 +1,24 @@
+
+<div class="categories-container">
+        <div class="distances-container">
+                <button *ngFor="let distance of distanceCategories" 
+                pButton 
+                [label]="distance"
+                (click)="onSelectDistance(distance)"
+                [ngClass]="{'active': distance === selectedDistance}"
+                ></button>
+        </div>
+
+        <div class="view-mode-container">
+                <button pButton
+                        (click)="onSelectViewMode('all-time')"
+                        [ngClass]="{'active' : viewMode === 'all-time'}"
+                        label="All Time"
+                        ></button>
+                <button pButton
+                        (click)="onSelectViewMode('year')"
+                        [ngClass]="{'active' : viewMode === 'year'}"
+                        label="By Year"
+                        ></button>
+        </div>
+</div>

@@ -1,0 +1,115 @@
+button.active {
+    color: #ff5a20; 
+    border: 1px solid #ff5a20;
+}
+
+button {
+    background-color: white; 
+    color: #333; 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+}
+
+.categories-container{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    button {
+        border-radius: 20px; 
+        padding: 5px 10px;
+        font-size: 12.5px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .categories-container {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    .view-mode-container{
+        margin-top: 7.5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    button {
+        border-radius: 20px; 
+        padding: 5px 10px;
+        font-size: 12.5px;
+        margin-left: 5px;
+    }
+
+    .categories-container {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
+    .view-mode-container{
+        margin-top: 7.5px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    button {
+        border-radius: 20px; 
+        padding: 7.5px 15px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .categories-container {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 800px;
+    }
+
+    .view-mode-container{
+        margin-top: 12.5px;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    button {
+        border-radius: 22.5px; 
+        padding: 12.5px 22.5px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .categories-container {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 1000px;
+    }
+
+    .view-mode-container{
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    button {
+        border-radius: 25px; 
+        padding: 15px 30px;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .categories-container {
+        margin-top: 65px;
+        margin-bottom: 40px;
+        width: 1250px;
+    }
+
+    .view-mode-container{
+        margin-top: 20px;
+    }
+}

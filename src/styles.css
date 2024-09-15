@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+    background-color: white !important;
+}
+
+.p-datatable .p-sortable-column.p-highlight:hover {
+    background: white;
+    color: #fc540b;
+}
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    font-weight: normal !important; 
+    color: #fc540b;
+}
+.p-datatable .p-sortable-column.p-highlight {
+    color: #fc540b;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+    color: black;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+    color:#757577;
+}
