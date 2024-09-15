@@ -11,12 +11,6 @@ export class StravaService {
 
     // Method to fetch activities from Strava's API
     fetchActivites(){
-        const cachedRuns = sessionStorage.getItem('strava_runs');
-        if(cachedRuns){
-            console.log('Using cached Activities')
-            return of(JSON.parse(cachedRuns))
-        }
-
         const perPage = 100;
         let page = 1;
         let allActivities: Activity[] = [];
@@ -33,7 +27,6 @@ export class StravaService {
                     // If there are no more activities to fetch
                     if(activities.length === 0){
                         const allRuns = allActivities.filter((activity) => activity.type === 'Run')
-                        sessionStorage.setItem('strava_runs', JSON.stringify(allRuns))
                         return of(allRuns)
                     }
                     allActivities = allActivities.concat(activities);
