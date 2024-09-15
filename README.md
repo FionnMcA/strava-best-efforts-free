@@ -128,4 +128,4 @@ Once you have set up the `strava-best-efforts-free` application and installed al
 [GoogleMaps-url]: https://developers.google.com/maps
 
 [PrimeNG]: https://img.shields.io/badge/PrimeNG-3C85D5?style=for-the-badge&logo=primeng&logoColor=white
-[PrimeNG-url]: https://www.primefaces.org/primeng/
+[PrimeNG-url]: https://primeng.org/installation
