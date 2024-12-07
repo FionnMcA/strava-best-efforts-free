@@ -1,8 +1,3 @@
-# This Was a Useful Tool While It Lasted
-
-**Important Update**  
-Due to recent changes in Strava's API policies ([read more here](https://www.theverge.com/2024/11/22/24303124/strava-fitness-data-wearables)). These restrictions limit third-party applications like this one from using Strava data in ways that were previously allowed.
-
 # About
 
 ![General Results](/project-screenshots/Screenshot1.png)
